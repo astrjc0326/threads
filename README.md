@@ -56,9 +56,9 @@ copy example.env file
 
 
 ## Contributors
-Anny Wang
-Amy Kwak
-Jake Gilfix
+### Amy Kwak
+### Anny Wang
+### Jake Gilfix
 <!-- # Instructions for development
 
 ---
