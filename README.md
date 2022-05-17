@@ -22,10 +22,18 @@ E-commerce activewear store website.
 ![alt text](gif/reviews.gif)
 
 ## Installation
+1. install npm 
 ```
 npm install
 ```
-copy example.env file
+2. apply for gitHub token and imgBB token
+3. copy example.env file and name it as .env
+4. fill in the token inside the .env file
+5. start the app by
+```
+npm start
+react-dev
+```
 
 ### Installation
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
