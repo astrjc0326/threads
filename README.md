@@ -29,10 +29,12 @@ npm install
 2. apply for gitHub token and imgBB token
 3. copy example.env file and name it as .env
 4. fill in the token inside the .env file
-5. start the app by
+5. start the app
 ```
 npm start
-react-dev
+```
+```
+npm run react-dev
 ```
 
 ### Installation
