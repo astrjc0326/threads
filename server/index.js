@@ -14,6 +14,10 @@ app.use('/', expressStaticGzip('client/dist', { enableBrotli: true }));
 app.use(express.json());
 app.use('', router);
 
+app.get('/test', (req, res) => {
+  res.send(`Hello World ${PORT}`);
+});
+
 // Fall back to routes on front-end from React Router
 app.get('*', (request, response) => {
   response.sendFile(path.resolve(__dirname, '../', 'client', 'dist', 'index.html'));
