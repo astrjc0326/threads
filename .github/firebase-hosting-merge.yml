@@ -1,0 +1,23 @@
+merge
+'on':
+  push:
+    branches:
+      - main
+      
+env:
+  GIT_TOKEN: ${{secrets.GIT_TOKEN}}
+  IMAGEBB_API_KEY: ${{secrets.IMAGEBB_API_KEY}}
+  
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm start && npm run react-dev
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_THREAD_BF697 }}'
+          channelId: live
+          projectId: thread-bf697
