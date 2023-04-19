@@ -27,4 +27,5 @@ app.get('*', (request, response) => {
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
 exports.app = functions.https.onRequest(app);
