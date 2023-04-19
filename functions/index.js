@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
@@ -26,3 +27,4 @@ app.get('*', (request, response) => {
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+exports.app = functions.https.onRequest(app);
