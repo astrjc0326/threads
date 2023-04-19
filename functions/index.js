@@ -1,4 +1,9 @@
 const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+const parse = require('body-parser');
+
+admin.initializeApp();
+
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
